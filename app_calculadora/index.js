@@ -1,8 +1,13 @@
-
+const express = require('express'); 
 const calc = require('./calculadora');
+const app = express(); 
+
+app.get('/', (req, res)=>{
+    res.send('Hello, world!')
+});
 
 
-console.log(calc.somar(3, 5)); 
-console.log(calc.subtrair(3, 5));
-console.log(calc.multiplicar(3, 5));
-console.log(calc.dividir(3, 5));
+const PORT = 8080;
+app.listen(PORT, ()=>{
+    console.log('app rodando na porta' + PORT); 
+});
