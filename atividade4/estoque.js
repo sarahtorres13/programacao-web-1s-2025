@@ -1,8 +1,12 @@
-const express = require('express');
-const app   = express();
+const itens = [];
 
-const PORT = 8080;
-app.listen(PORT, ()=>){
-    console.log('app rodando na porta' + PORT); 
+export function adicionar(item){
+itens.push(item);
 
-}; 
+}
+
+export function listar(){
+
+
+    
+}
