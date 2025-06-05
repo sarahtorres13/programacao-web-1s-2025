@@ -7,7 +7,7 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 app.use(express.urlencoded({extended: true}));
 
-const agendamentoRouter = require('./routers/agendamentoRouter.js');
+const agendamentoRouter = require('./routers/agendamentoRouter');
 app.use('/', agendamentoRouter);
 
 const PORT = 8080;
